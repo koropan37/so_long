@@ -1,18 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   read_map.c                                         :+:      :+:    :+:   */
+/*   map_read.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: skimura <skimura@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/02 03:48:11 by skimura           #+#    #+#             */
-/*   Updated: 2025/07/07 18:01:37 by skimura          ###   ########.fr       */
+/*   Updated: 2025/07/12 19:51:44 by skimura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "so_long.h"
 
 static void	render_cell(t_game *game, int x, int y);
+void		render_item(t_game *game, int x, int y);
 
 void	render_map(t_game *game)
 {
@@ -30,6 +31,7 @@ void	render_map(t_game *game)
 		}
 		y++;
 	}
+	render_ui_in_map(game);
 }
 
 static void	render_cell(t_game *game, int x, int y)

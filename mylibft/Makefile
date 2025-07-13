@@ -6,7 +6,7 @@
 #    By: skimura <skimura@student.42tokyo.jp>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/26 10:34:56 by skimura           #+#    #+#              #
-#    Updated: 2025/07/05 19:46:28 by skimura          ###   ########.fr        #
+#    Updated: 2025/07/13 18:06:23 by skimura          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -73,7 +73,7 @@ clean:
 fclean: clean
 	@$(RM) $(NAME)
 	@echo "$(YELLOW)[DELETE]$(RED) All clean: $(NAME)$(RESET)"
-
+	
 re: fclean all
 
 .PHONY: all clean fclean re
